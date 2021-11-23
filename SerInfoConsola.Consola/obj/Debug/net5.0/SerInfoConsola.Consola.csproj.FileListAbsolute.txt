@@ -14,3 +14,7 @@ C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInf
 C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\ref\SerInfoConsola.Consola.dll
 C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.pdb
 C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.genruntimeconfig.cache
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\ConexionBD.Persistencia.dll
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\ProyectSerInfo.Dominio.dll
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\ProyectSerInfo.Dominio.pdb
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\ConexionBD.Persistencia.pdb

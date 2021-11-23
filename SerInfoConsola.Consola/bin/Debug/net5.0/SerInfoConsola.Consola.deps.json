@@ -7,14 +7,38 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "SerInfoConsola.Consola/1.0.0": {
+        "dependencies": {
+          "ConexionBD.Persistencia": "1.0.0",
+          "ProyectSerInfo.Dominio": "1.0.0"
+        },
         "runtime": {
           "SerInfoConsola.Consola.dll": {}
+        }
+      },
+      "ConexionBD.Persistencia/1.0.0": {
+        "runtime": {
+          "ConexionBD.Persistencia.dll": {}
+        }
+      },
+      "ProyectSerInfo.Dominio/1.0.0": {
+        "runtime": {
+          "ProyectSerInfo.Dominio.dll": {}
         }
       }
     }
   },
   "libraries": {
     "SerInfoConsola.Consola/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ConexionBD.Persistencia/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProyectSerInfo.Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
