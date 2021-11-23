@@ -12,5 +12,7 @@ namespace ProyectSerInfo.Dominio
         public string Datetime FechaIngreso {get; set;}
 
         public string Tecnico Tecnico {get; set;}
+
+        public string Marca {get; set;}
     }
 }
