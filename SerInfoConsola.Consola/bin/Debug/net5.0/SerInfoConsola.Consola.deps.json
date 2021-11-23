@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SerInfoConsola.Consola/1.0.0": {
+        "runtime": {
+          "SerInfoConsola.Consola.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SerInfoConsola.Consola/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

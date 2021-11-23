@@ -1,0 +1,16 @@
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\SerInfoConsola.Consola.exe
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\SerInfoConsola.Consola.deps.json
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\SerInfoConsola.Consola.runtimeconfig.json
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\SerInfoConsola.Consola.runtimeconfig.dev.json
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\SerInfoConsola.Consola.dll
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\ref\SerInfoConsola.Consola.dll
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\bin\Debug\net5.0\SerInfoConsola.Consola.pdb
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.csproj.AssemblyReference.cache
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.AssemblyInfoInputs.cache
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.AssemblyInfo.cs
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.csproj.CoreCompileInputs.cache
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.dll
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\ref\SerInfoConsola.Consola.dll
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.pdb
+C:\Users\admin\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.genruntimeconfig.cache
