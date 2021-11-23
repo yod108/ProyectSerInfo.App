@@ -1,7 +1,7 @@
 namespace ProyectSerInfo.Dominio.Entidades
 {
     ///<sumary>
-    ///Lista de fallas en el pc Class <c> Fallas </c>
+    ///Lista de fallas en el pc
     ///</sumary>
 
     public enum FallasPc
@@ -20,7 +20,9 @@ namespace ProyectSerInfo.Dominio.Entidades
 
         Garantia,
 
-        Pantalla_LCD_Rota
+        Pantalla_LCD_Rota,
+
+        Placa_quemada
 
     }
 }
