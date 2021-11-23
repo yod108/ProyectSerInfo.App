@@ -10,5 +10,7 @@ namespace ProyectSerInfo.Dominio
         public string Ciudad {get; set;}
 
         public string Datetime FechaIngreso {get; set;}
+
+        public string Tecnico Tecnico {get; set;}
     }
 }
