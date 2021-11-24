@@ -6,10 +6,10 @@ namespace ProyectSerInfo.Dominio
     ///</sumary>
     public class Tecnico : Persona
     {
-        public string Area {get; set;}
+        public string Area{get; set;}
 
-        public string Codigo {get; set;}
+        public string Codigo{get; set;}
 
-        public string RegistroRethus {get; set;}
+        public string RegistroRethus{get; set;}
     }
 }

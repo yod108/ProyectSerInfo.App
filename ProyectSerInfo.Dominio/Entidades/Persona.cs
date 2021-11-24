@@ -10,8 +10,8 @@ namespace ProyectSerInfo.Dominio
         public string Apellido{get; set;}
 
         public string Celular{get; set;}
-        
+
         //Genero de la persona
-        public Genero Genero {get; set;}
+        public Genero Genero{get; set;}
     }
 }

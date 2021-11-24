@@ -1,5 +1,4 @@
-namespace ProyectSerInfo.Dominio.Entidades
-{
+namespace ProyectSerInfo.Dominio
     ///<sumary>
     ///Lista de fallas en el pc
     ///</sumary>

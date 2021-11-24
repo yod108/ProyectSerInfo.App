@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "ProyectSerInfo.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ProyectSerInfo.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProyectSerInfo.Dominio.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ProyectSerInfo.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../ProyectSerInfo.Dominio/ProyectSerInfo.Dominio.csproj",
+      "msbuildProject": "../ProyectSerInfo.Dominio/ProyectSerInfo.Dominio.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "ProyectSerInfo.Dominio >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\admin\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\admin\\ProyectSerInfo.App\\ProyectSerInfo.Dominio\\ProyectSerInfo.Dominio.csproj": {
+              "projectPath": "C:\\Users\\admin\\ProyectSerInfo.App\\ProyectSerInfo.Dominio\\ProyectSerInfo.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
