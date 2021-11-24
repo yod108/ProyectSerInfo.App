@@ -32,22 +32,22 @@ Creación proyecto ProyectoSerInfo
         a) dotnet new console -o MiprimeraApp.Consola
 
     8) Instalacion de paquetes:
-                --version 5.0.9 (opciona para instalar una version especifica)
-        dotnet add package Microsoft.EntityFrameworkCore 
-        dotnet add package Microsoft.EntityFrameworkCore.Tools
-        dotnet add package Microsoft.EntityFrameworkCore.Design
-        dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+                --version 5.0.9 (opción para instalar una version especifica)
+        dotnet add package Microsoft.EntityFrameworkCore --version 5.0.10
+        dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.10
+        dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.10
+        dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.10
     
         a) Carpeta Consola
-            dotnet add package Microsoft.EntityFrameworkCore.Design
+            dotnet add package Microsoft.EntityFrameworkCore.Design 
 
         b) Carpeta Frontend
 
         c) Carpeta Persistencia
-            dotnet add package Microsoft.EntityFrameworkCore 
-            dotnet add package Microsoft.EntityFrameworkCore.Tools
-            dotnet add package Microsoft.EntityFrameworkCore.Design
-            dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+            dotnet add package Microsoft.EntityFrameworkCore --version 5.0.10
+            dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.10
+            dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.10
+            dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.10
     
     9) Crear las referencias a las carpetas de persistencia y dominio; siempre y cuando analicemos que uniones debemos realizar dentro de los .csproj
 
