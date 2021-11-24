@@ -1,12 +1,12 @@
 using System;
 
-namespace ProyectSerInfo.Dominio.Entidades
+namespace ProyectSerInfo.Dominio
 {
     public class EvidenciaPC
     {
         public int Id{get; set;}
 
-        public Datetime FechaInicio{get; set;}
+        public DateTime FechaInicio{get; set;}
 
         public FallasPc Fallas{get; set;}
 

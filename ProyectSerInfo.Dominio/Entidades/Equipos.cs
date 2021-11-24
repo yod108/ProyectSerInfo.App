@@ -9,10 +9,12 @@ namespace ProyectSerInfo.Dominio
 
         public string Ciudad{get; set;}
 
-        public string Datetime FechaIngreso{get; set;}
+        public DateTime FechaIngreso{get; set;}
 
-        public string Tecnico Tecnico{get; set;}
+        public Tecnico Tecnico{get; set;}
 
         public string Marca{get; set;}
+
+        public List<FallasPc> FallasPcs {get; set;}
     }
 }

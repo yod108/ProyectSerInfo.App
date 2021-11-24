@@ -1,4 +1,5 @@
 namespace ProyectSerInfo.Dominio
+{ 
     ///<sumary>
     ///Lista de fallas en el pc
     ///</sumary>
