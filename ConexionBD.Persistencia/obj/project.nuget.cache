@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1zcKNneevfXX7b0jARMJpyH02Pe7UW7A8OUMopdcvWcECUjGip/oVntXG6VwwaX43YexwifPbgQggiqE6TR83g==",
+  "dgSpecHash": "VxmWwD4tTyQB/eMziqJL0hkUUBTcYYddAbpCxfsYIX+THsYJvoZAU6pcbyTkR/nCCjtI1oFp400Eob2zdhTphw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\ProyectSerInfo.App\\ConexionBD.Persistencia\\ConexionBD.Persistencia.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\ProyectSerInfo.App\\ConexionBD.Persistencia\\ConexionBD.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
