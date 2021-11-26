@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\ProyectSerInfo.App\\SerInfoFrontend.Frontend\\SerInfoFrontend.Frontend.csproj": {}
+    "C:\\Users\\admin\\Desktop\\ProyectSerInfo.App\\SerInfoFrontend.Frontend\\SerInfoFrontend.Frontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\ProyectSerInfo.App\\SerInfoFrontend.Frontend\\SerInfoFrontend.Frontend.csproj": {
+    "C:\\Users\\admin\\Desktop\\ProyectSerInfo.App\\SerInfoFrontend.Frontend\\SerInfoFrontend.Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\ProyectSerInfo.App\\SerInfoFrontend.Frontend\\SerInfoFrontend.Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\ProyectSerInfo.App\\SerInfoFrontend.Frontend\\SerInfoFrontend.Frontend.csproj",
         "projectName": "SerInfoFrontend.Frontend",
-        "projectPath": "C:\\Users\\admin\\ProyectSerInfo.App\\SerInfoFrontend.Frontend\\SerInfoFrontend.Frontend.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\ProyectSerInfo.App\\SerInfoFrontend.Frontend\\SerInfoFrontend.Frontend.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\ProyectSerInfo.App\\SerInfoFrontend.Frontend\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\ProyectSerInfo.App\\SerInfoFrontend.Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -14,7 +14,6 @@ namespace ProyectSerInfo.Dominio
         public Tecnico Tecnico{get; set;}
 
         public string Marca{get; set;}
-
-        public List<FallasPc> FallasPcs {get; set;}
+        
     }
 }
