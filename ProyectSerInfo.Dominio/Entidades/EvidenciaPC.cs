@@ -2,7 +2,7 @@ using System;
 
 namespace ProyectSerInfo.Dominio
 {
-    public class EvidenciaPC
+    public class EvidenciaPc
     {
         public int Id{get; set;}
 
@@ -10,7 +10,7 @@ namespace ProyectSerInfo.Dominio
 
         public FallasPc Fallas{get; set;}
 
-        public Equipos Equipos{get; set;}
+        public Cliente Cliente{get; set;}
 
     }
 }

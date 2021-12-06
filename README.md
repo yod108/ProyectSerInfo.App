@@ -43,6 +43,8 @@ Creación proyecto ProyectoSerInfo
 
         b) Carpeta Frontend
 
+            dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.10
+
         c) Carpeta Persistencia
             dotnet add package Microsoft.EntityFrameworkCore --version 5.0.10
             dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.10
@@ -65,3 +67,53 @@ Creación proyecto ProyectoSerInfo
 
         12.2) Si ya existe migraciones
             a) dotnet ef database update --startup-project ..\MiprimeraApp.Consola\
+
+    \\Métodos restantes
+    Agregar las referencias en Frontend de: Persistencia y Dominio
+
+    dotnet add reference ..\MiprimeraApp.Dominio
+    dotnet add reference ..\MiprimeraApp.Persistencia
+
+    Crear nueva pagina Razor:
+
+    dotnet new page -n “Index1”-na SerInfoFrontend.Frontend.Pages -o .\Pages\Clientes
+
+    Metodos IRepositorioPaciente Paciente UpdatePaciente(Paciente paciente); void DeletePaciente(int idPaciente);
+    Paciente GetPaciente(int idPaciente);
+
+    DeletePaciente
+
+    public void DeletePaciente(int idPaciente) { var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente); if (pacienteEncontrado == null) return; _appContext.Pacientes.Remove(pacienteEncontrado); _appContext.SaveChanges(); }
+
+    GetPaciente
+
+    public Paciente GetPaciente(int idPaciente) { //return _appContext.Pacientes.Find(idPaciente);
+
+        var paciente = _appContext.Pacientes
+                .Where(p => p.Id == idPaciente)
+                .Include(p => p.Medico)
+                .Include(p=> p.SignosVitales)
+                .FirstOrDefault();
+        return paciente;
+    }
+
+    UpdatePaciente
+
+    public Paciente UpdatePaciente(Paciente paciente)
+    {
+        var pacienteEncontrado = _appContext.Pacientes.Find(paciente.Id);
+        if (pacienteEncontrado != null)
+        {
+            pacienteEncontrado.Nombre = paciente.Nombre;
+            pacienteEncontrado.Apellidos = paciente.Apellidos;
+            pacienteEncontrado.NumeroTelefono = paciente.NumeroTelefono;
+            pacienteEncontrado.Genero = paciente.Genero;
+            pacienteEncontrado.Direccion = paciente.Direccion;
+            pacienteEncontrado.Latitud = paciente.Latitud;
+            pacienteEncontrado.Longitud = paciente.Longitud;
+            pacienteEncontrado.Ciudad = paciente.Ciudad;
+            pacienteEncontrado.FechaNacimiento = paciente.FechaNacimiento;
+            _appContext.SaveChanges();
+        }
+        return pacienteEncontrado;
+    }

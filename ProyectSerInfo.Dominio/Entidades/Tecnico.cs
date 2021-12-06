@@ -2,7 +2,7 @@ namespace ProyectSerInfo.Dominio
 {
 
     ///<sumary> Class <c> Tecnico </c>
-    ///Modelo del tecnico
+    ///Modelado del tecnico
     ///</sumary>
     public class Tecnico : Persona
     {

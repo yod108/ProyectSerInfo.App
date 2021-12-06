@@ -128,7 +128,6 @@ C:\Users\admin\Desktop\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.
 C:\Users\admin\Desktop\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.AssemblyInfoInputs.cache
 C:\Users\admin\Desktop\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.AssemblyInfo.cs
 C:\Users\admin\Desktop\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.csproj.CoreCompileInputs.cache
-C:\Users\admin\Desktop\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.csproj.CopyComplete
 C:\Users\admin\Desktop\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.dll
 C:\Users\admin\Desktop\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\ref\SerInfoConsola.Consola.dll
 C:\Users\admin\Desktop\ProyectSerInfo.App\SerInfoConsola.Consola\obj\Debug\net5.0\SerInfoConsola.Consola.pdb

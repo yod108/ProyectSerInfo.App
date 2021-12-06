@@ -39,30 +39,30 @@ namespace ConexionBD.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "EvidenciaPCs",
+                name: "EvidenciaPcs",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Fallas = table.Column<int>(type: "int", nullable: false),
-                    EquiposId = table.Column<int>(type: "int", nullable: true)
+                    ClienteId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EvidenciaPCs", x => x.Id);
+                    table.PrimaryKey("PK_EvidenciaPcs", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_EvidenciaPCs_Personas_EquiposId",
-                        column: x => x.EquiposId,
+                        name: "FK_EvidenciaPcs_Personas_ClienteId",
+                        column: x => x.ClienteId,
                         principalTable: "Personas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_EvidenciaPCs_EquiposId",
-                table: "EvidenciaPCs",
-                column: "EquiposId");
+                name: "IX_EvidenciaPcs_ClienteId",
+                table: "EvidenciaPcs",
+                column: "ClienteId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Personas_TecnicoId",
@@ -73,7 +73,7 @@ namespace ConexionBD.Persistencia.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "EvidenciaPCs");
+                name: "EvidenciaPcs");
 
             migrationBuilder.DropTable(
                 name: "Personas");

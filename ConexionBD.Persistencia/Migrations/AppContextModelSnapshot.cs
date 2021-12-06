@@ -19,14 +19,14 @@ namespace ConexionBD.Persistencia.Migrations
                 .HasAnnotation("ProductVersion", "5.0.10")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ProyectSerInfo.Dominio.EvidenciaPC", b =>
+            modelBuilder.Entity("ProyectSerInfo.Dominio.EvidenciaPc", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("EquiposId")
+                    b.Property<int?>("ClienteId")
                         .HasColumnType("int");
 
                     b.Property<int>("Fallas")
@@ -37,9 +37,9 @@ namespace ConexionBD.Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EquiposId");
+                    b.HasIndex("ClienteId");
 
-                    b.ToTable("EvidenciaPCs");
+                    b.ToTable("EvidenciaPcs");
                 });
 
             modelBuilder.Entity("ProyectSerInfo.Dominio.Persona", b =>
@@ -72,7 +72,7 @@ namespace ConexionBD.Persistencia.Migrations
                     b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
                 });
 
-            modelBuilder.Entity("ProyectSerInfo.Dominio.Equipos", b =>
+            modelBuilder.Entity("ProyectSerInfo.Dominio.Cliente", b =>
                 {
                     b.HasBaseType("ProyectSerInfo.Dominio.Persona");
 
@@ -93,7 +93,7 @@ namespace ConexionBD.Persistencia.Migrations
 
                     b.HasIndex("TecnicoId");
 
-                    b.HasDiscriminator().HasValue("Equipos");
+                    b.HasDiscriminator().HasValue("Cliente");
                 });
 
             modelBuilder.Entity("ProyectSerInfo.Dominio.Tecnico", b =>
@@ -112,22 +112,27 @@ namespace ConexionBD.Persistencia.Migrations
                     b.HasDiscriminator().HasValue("Tecnico");
                 });
 
-            modelBuilder.Entity("ProyectSerInfo.Dominio.EvidenciaPC", b =>
+            modelBuilder.Entity("ProyectSerInfo.Dominio.EvidenciaPc", b =>
                 {
-                    b.HasOne("ProyectSerInfo.Dominio.Equipos", "Equipos")
-                        .WithMany()
-                        .HasForeignKey("EquiposId");
+                    b.HasOne("ProyectSerInfo.Dominio.Cliente", "Cliente")
+                        .WithMany("Clientes")
+                        .HasForeignKey("ClienteId");
 
-                    b.Navigation("Equipos");
+                    b.Navigation("Cliente");
                 });
 
-            modelBuilder.Entity("ProyectSerInfo.Dominio.Equipos", b =>
+            modelBuilder.Entity("ProyectSerInfo.Dominio.Cliente", b =>
                 {
                     b.HasOne("ProyectSerInfo.Dominio.Tecnico", "Tecnico")
                         .WithMany()
                         .HasForeignKey("TecnicoId");
 
                     b.Navigation("Tecnico");
+                });
+
+            modelBuilder.Entity("ProyectSerInfo.Dominio.Cliente", b =>
+                {
+                    b.Navigation("Clientes");
                 });
 #pragma warning restore 612, 618
         }

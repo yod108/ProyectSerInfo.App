@@ -9,9 +9,9 @@ namespace ConexionBD.Persistencia
 
         public DbSet<Tecnico> Tecnicos {get; set;}
 
-        public DbSet<EvidenciaPC> EvidenciaPCs {get; set;}
+        public DbSet<EvidenciaPc> EvidenciaPcs {get; set;}
 
-        public DbSet<Equipos> Equipos {get; set;}
+        public DbSet<Cliente> Clientes {get; set;}
 
         //Método para implementar la conexión con la BD
 
