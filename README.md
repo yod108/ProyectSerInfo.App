@@ -76,7 +76,7 @@ Creación proyecto ProyectoSerInfo
 
     Crear nueva pagina Razor:
 
-    dotnet new page -n “Index1”-na SerInfoFrontend.Frontend.Pages -o .\Pages\Clientes
+    dotnet new page -n “Create1”-na SerInfoFrontend.Frontend.Pages -o .\Pages\Clientes
 
     Metodos IRepositorioPaciente Paciente UpdatePaciente(Paciente paciente); void DeletePaciente(int idPaciente);
     Paciente GetPaciente(int idPaciente);
