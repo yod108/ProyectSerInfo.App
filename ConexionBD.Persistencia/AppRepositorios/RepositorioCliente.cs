@@ -26,6 +26,7 @@ namespace ConexionBD.Persistencia
         }
 
         IEnumerable<Cliente> IRepositorioCliente.GetAllClientes()
+        //public IEnumerable<Cliente> GetAllClientes()
         {
             return _appContext.Clientes;
         }

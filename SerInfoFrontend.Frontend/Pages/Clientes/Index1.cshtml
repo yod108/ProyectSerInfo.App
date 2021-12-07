@@ -1,5 +1,6 @@
 ﻿@page
-@model SerInfoFrontend.Frontend.Pages.Index1Model
+@using ProyectSerInfo.Dominio
+@model SerInfoFrontend.Frontend.Pages.Clientes.Index1Model
 @{
 }
 
@@ -9,27 +10,19 @@
       <th scope="col">#</th>
       <th scope="col">NOMBRE</th>
       <th scope="col">APELLIDO</th>
-      <th scope="col">DISCRIMINADOR</th>
+      <th scope="col">CELULAR</th>
+      <th scope="col">GENERO</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td></td>
-    </tr>
+    @foreach (var cliente in Model.clientes)
+    {
+      <tr>
+        <td>@cliente.Id</td>
+        <td>@cliente.Nombre</td>
+        <td>@cliente.Apellido</td>
+        <td>@cliente.Celular</td>
+      </tr>
+    }
   </tbody>
 </table>
