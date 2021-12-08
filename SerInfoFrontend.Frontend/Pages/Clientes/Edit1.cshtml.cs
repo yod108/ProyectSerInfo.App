@@ -9,32 +9,32 @@ using ConexionBD.Persistencia;
 
 namespace SerInfoFrontend.Frontend.Pages.Clientes
 {
-    public class Create1Model : PageModel
+    public class Edit1Model : PageModel
     {
         private readonly IRepositorioCliente _repoCliente;
 
         public Cliente cliente {get; set;}
 
-        public Create1Model(IRepositorioCliente repoCliente)
+        public Edit1Model(IRepositorioCliente repoCliente)
         {
-            _repoCliente = repoCliente;
+            _repoCliente= repoCliente;
         }
-
-        public void OnGet()
+        public IActionResult OnGet(int id)
         {
-            cliente = new Cliente();
-        }
-
-        public IActionResult OnPost(Cliente cliente)
-        {
-            if (ModelState.IsValid)
+            cliente = _repoCliente.GetCliente(id);
+            if (cliente == null)
             {
-                _repoCliente.AddCliente(cliente);
-                return RedirectToPage("Index1");
+                return NotFound();
             } else
             {
                 return Page();
             }
+        }
+
+        public IActionResult OnPost(Cliente cliente)
+        {
+            _repoCliente.UpdateCliente(cliente);
+            return RedirectToPage("Index1"); 
         }
     }
 }

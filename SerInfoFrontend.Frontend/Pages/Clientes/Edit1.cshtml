@@ -1,0 +1,35 @@
+﻿@page
+@using ProyectSerInfo.Dominio;
+@model SerInfoFrontend.Frontend.Pages.Clientes.Edit1Model
+@{
+}
+
+<h1>Editar Clientes</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="cliente.Id"></label>
+        <input asp-for="cliente.Id" class="form-control" readonly>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="cliente.Nombre"></label>
+        <input asp-for="cliente.Nombre" class="form-control">
+        <span asp-validation-for="cliente.Nombre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="cliente.Apellido"></label>
+        <input asp-for="cliente.Apellido" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="cliente.Celular"></label>
+        <input asp-for="cliente.Celular" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label asp-for="cliente.Direccion"></label>
+        <input asp-for="cliente.Direccion" class="form-control">
+    </div>
+    
+</form>

@@ -52,17 +52,40 @@ namespace SerInfoConsola.Consola
                     Console.WriteLine(cliente.Id +" "+ cliente.Nombre + " " + cliente.Apellido +" "+ cliente.Genero);
                 }
         }
-
+        //Buscar Cliente
+        /*
         private static void BuscarCliente(int idCliente)
         {
             var cliente = _repoCliente.GetCliente(idCliente);
             Console.WriteLine(cliente.Id +" "+ cliente.Nombre +" "+ cliente.Apellido +" "+ cliente.Genero);
         }
+        */
+        public Cliente GetCliente(int idCliente)
+        {            
+            var cliente = _appContext.Clientes
+                       .Where(p => p.Id == idCliente)
+                       .Include(p => p.Tecnico)
+                       .Include(p=> p.EvidenciasPcs)
+                       .FirstOrDefault();
+            return cliente;
+        }
 
+        //Eliminar Cliente
+        /*
         private static void EliminarCliente(int idCliente)
         {
             _repoCliente.DeleteCliente(idCliente);
             Console.WriteLine("Cliente Eliminado...");
+        }
+        */
+
+        public void DeleteCliente(int idCliente)
+        {
+            var clienteEncontrado = _appContext.Clientes.Find(idCliente);
+            if (clienteEncontrado == null)
+                return;
+            _appContext.Clientes.Remove(clienteEncontrado);
+            _appContext.SaveChanges();
         }
 
         //Método para Agregar Técnico
@@ -110,6 +133,24 @@ namespace SerInfoConsola.Consola
         {
             var cliente = _repoEvidenciaPc.AsignarCliente(1, 1);
             Console.WriteLine(cliente.Nombre + " " + cliente.Apellido);
+        }
+
+        //Actualizar Cliente
+        public Cliente UpdateCliente(Cliente cliente)
+        {
+            var clienteEncontrado = _appContext.Clientes.Find(cliente.Id);
+            if (clienteEncontrado != null)
+            {
+                clienteEncontrado.Nombre = cliente;
+                clienteEncontrado.Apellido = cliente.Apellido;
+                clienteEncontrado.Celular = cliente.Celular;
+                clienteEncontrado.Genero = cliente.Genero;
+                clienteEncontrado.Direccion = cliente.Direccion;
+                clienteEncontrado.Ciudad = cliente.Ciudad;
+                clienteEncontrado.FechaIngreso = cliente.FechaIngreso;
+                _appContext.SaveChanges();
+            }
+            return clienteEncontrado;
         }
     }
 }
