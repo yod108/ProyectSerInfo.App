@@ -27,7 +27,7 @@ namespace  SerInfoFrontend.Frontend.Pages.Clientes
                 return NotFound();
             } else
             {
-                return Pages();
+                return Page();
             }
         }
     }

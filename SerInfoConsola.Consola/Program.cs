@@ -14,6 +14,7 @@ namespace SerInfoConsola.Consola
 
         private static IRepositorioEvidenciaPc _repoEvidenciaPc = new RepositorioEvidenciaPc();
 
+
         static void Main(string[] args)
         {
             Console.WriteLine("¡Bienvenidos al SerInfo!...");
@@ -53,14 +54,14 @@ namespace SerInfoConsola.Consola
                 }
         }
         //Buscar Cliente
-        /*
+        
         private static void BuscarCliente(int idCliente)
         {
             var cliente = _repoCliente.GetCliente(idCliente);
             Console.WriteLine(cliente.Id +" "+ cliente.Nombre +" "+ cliente.Apellido +" "+ cliente.Genero);
         }
-        */
-        public Cliente GetCliente(int idCliente)
+        
+        /*/public Cliente GetCliente(int idCliente)
         {            
             var cliente = _appContext.Clientes
                        .Where(p => p.Id == idCliente)
@@ -68,25 +69,25 @@ namespace SerInfoConsola.Consola
                        .Include(p=> p.EvidenciasPcs)
                        .FirstOrDefault();
             return cliente;
-        }
+        }*/
 
         //Eliminar Cliente
-        /*
+        
         private static void EliminarCliente(int idCliente)
         {
             _repoCliente.DeleteCliente(idCliente);
             Console.WriteLine("Cliente Eliminado...");
         }
-        */
+        
 
-        public void DeleteCliente(int idCliente)
+        /*public void DeleteCliente(int idCliente)
         {
             var clienteEncontrado = _appContext.Clientes.Find(idCliente);
             if (clienteEncontrado == null)
                 return;
             _appContext.Clientes.Remove(clienteEncontrado);
             _appContext.SaveChanges();
-        }
+        }*/
 
         //Método para Agregar Técnico
         private static void AddTecnico()
@@ -136,7 +137,7 @@ namespace SerInfoConsola.Consola
         }
 
         //Actualizar Cliente
-        public Cliente UpdateCliente(Cliente cliente)
+        /*public Cliente UpdateCliente(Cliente cliente)
         {
             var clienteEncontrado = _appContext.Clientes.Find(cliente.Id);
             if (clienteEncontrado != null)
@@ -151,6 +152,6 @@ namespace SerInfoConsola.Consola
                 _appContext.SaveChanges();
             }
             return clienteEncontrado;
-        }
+        }*/
     }
 }

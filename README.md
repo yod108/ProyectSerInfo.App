@@ -63,10 +63,10 @@ Creación proyecto ProyectoSerInfo
 
     12) Crear la migracion a la base de datos
         12.1) Si no se tiene migraciones.
-            a) dotnet ef migrations add Inicial --startup-project ..\MiprimeraApp.Consola\
+            a) dotnet ef migrations add Inicial --startup-project ..\SerInfoConsola.Consola\
 
         12.2) Si ya existe migraciones
-            a) dotnet ef database update --startup-project ..\MiprimeraApp.Consola\
+            a) dotnet ef database update --startup-project ..\SerInfoConsola.Consola
 
     \\Métodos restantes
     Agregar las referencias en Frontend de: Persistencia y Dominio

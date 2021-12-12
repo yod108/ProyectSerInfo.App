@@ -11,7 +11,7 @@
       <!--Espacio reservado para hacer algo-->
     </div>
     <div class="col-md-auto">
-        <form method="form-group">
+        <form method="post">
             <div class="form-group">
                 <label asp-for="cliente.Nombre"></label>
                 <input asp-for="cliente.Nombre" placeholder="Ingrese Nombre">
@@ -29,7 +29,7 @@
 
             <div class="form-group">
                 <label asp-for="cliente.Genero"></label>
-                <select asp-for="cliente.Celular" asp-items="Html.GetEnumSelectList<Genero>()" class="form-control"></select>
+                <select asp-for="cliente.Genero" asp-items="Html.GetEnumSelectList<Genero>()" class="form-control"></select>
             </div>
 
             <div class="form-group">
@@ -43,10 +43,9 @@
             </div>
             
             <button type="submit" class="btn btn-primary">Crear Cliente</button>
-            <hr>
-            <a class="btn btn-secondary" asp-page="./Index1">Volver</a>
-
         </form>
+        <!--Link para ir a la página Index1-->
+        <a class="btn btn-secondary" asp-page="./Index1">Volver</a>
         
     </div>
     <div class="col col-lg-2">

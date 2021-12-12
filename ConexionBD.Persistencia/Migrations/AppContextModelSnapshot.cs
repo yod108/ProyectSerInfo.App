@@ -115,7 +115,7 @@ namespace ConexionBD.Persistencia.Migrations
             modelBuilder.Entity("ProyectSerInfo.Dominio.EvidenciaPc", b =>
                 {
                     b.HasOne("ProyectSerInfo.Dominio.Cliente", "Cliente")
-                        .WithMany("Clientes")
+                        .WithMany("EvidenciaPcs")
                         .HasForeignKey("ClienteId");
 
                     b.Navigation("Cliente");
@@ -132,7 +132,7 @@ namespace ConexionBD.Persistencia.Migrations
 
             modelBuilder.Entity("ProyectSerInfo.Dominio.Cliente", b =>
                 {
-                    b.Navigation("Clientes");
+                    b.Navigation("EvidenciaPcs");
                 });
 #pragma warning restore 612, 618
         }

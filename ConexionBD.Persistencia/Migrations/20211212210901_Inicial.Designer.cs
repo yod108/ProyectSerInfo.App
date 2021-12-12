@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ConexionBD.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211206033926_Inicial")]
+    [Migration("20211212210901_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -117,7 +117,7 @@ namespace ConexionBD.Persistencia.Migrations
             modelBuilder.Entity("ProyectSerInfo.Dominio.EvidenciaPc", b =>
                 {
                     b.HasOne("ProyectSerInfo.Dominio.Cliente", "Cliente")
-                        .WithMany("Clientes")
+                        .WithMany("EvidenciaPcs")
                         .HasForeignKey("ClienteId");
 
                     b.Navigation("Cliente");
@@ -134,7 +134,7 @@ namespace ConexionBD.Persistencia.Migrations
 
             modelBuilder.Entity("ProyectSerInfo.Dominio.Cliente", b =>
                 {
-                    b.Navigation("Clientes");
+                    b.Navigation("EvidenciaPcs");
                 });
 #pragma warning restore 612, 618
         }
