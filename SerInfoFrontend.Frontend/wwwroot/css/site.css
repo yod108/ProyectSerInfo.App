@@ -28,6 +28,11 @@ h1 {
   border-color: #1861ac;
 }
 
+p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
